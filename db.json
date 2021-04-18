@@ -1,0 +1,19 @@
+{
+  "contacts": [
+    {
+      "name": "Alpha",
+      "number": "0671234567",
+      "id": 1
+    },
+    {
+      "name": "Beta",
+      "number": "0501234567",
+      "id": 2
+    },
+    {
+      "name": "Gamma",
+      "number": "0981234567",
+      "id": 3
+    }
+  ]
+}

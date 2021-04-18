@@ -1,0 +1,24 @@
+.userMenu {
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  font-weight: 800;
+}
+
+.avatar {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.span {
+  color: white;
+  margin-right: 10px;
+}
+
+.icon {
+  color: white;
+}
+
+.icon:hover {
+  color: #6b1904f5;
+}
