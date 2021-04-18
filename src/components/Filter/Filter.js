@@ -9,7 +9,12 @@ const Filter = ({ filterValue, onToFilter }) => {
     <form className={s.wrapper}>
       <label>
         Find contacts by name{" "}
-        <input type="text" value={filterValue} onChange={onToFilter} />
+        <input
+          type="text"
+          value={filterValue}
+          onChange={onToFilter}
+          size="30"
+        />
       </label>
     </form>
   );

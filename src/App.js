@@ -11,20 +11,10 @@ import { authOperations } from "./redux/auth";
 
 import "./App.css";
 
-const HomeView = lazy(() =>
-  import("./views/HomeView.js" /* webpackChunkName: "home-view" */)
-);
-const ContactsView = lazy(() =>
-  import("./views/ContactsView.js" /* webpackChunkName: "contacts-view" */)
-);
-const LoginView = lazy(() =>
-  import("./views/LoginView.js" /* webpackChunkName: "login-view" */)
-);
-const RegistrationView = lazy(() =>
-  import(
-    "./views/RegistrationView.js" /* webpackChunkName: "registration-view" */
-  )
-);
+const HomeView = lazy(() => import("./views/HomeView.js"));
+const ContactsView = lazy(() => import("./views/ContactsView.js"));
+const LoginView = lazy(() => import("./views/LoginView.js"));
+const RegistrationView = lazy(() => import("./views/RegistrationView.js"));
 
 class App extends Component {
   componentDidMount() {
@@ -37,7 +27,7 @@ class App extends Component {
         <div className="App">
           <AppBar />
           <Container>
-            <Suspense fallback={<h1>Load..</h1>}>
+            <Suspense fallback={<h1>Loading..</h1>}>
               <Switch>
                 <PublicRoute exact path={routes.home} component={HomeView} />
                 <PrivateRoute
